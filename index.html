@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <!-- <link rel="icon" type="image/x-icon" href="icon.png"> -->    
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="main-menu">
+
+            <img id="logo" src="logo2.png" width="80" height="50">
+            
+            <center><span id="bar">
+               
+                <a href="#" id="menu">Home</a>
+                <a href="#" id="menu">About Us</a>
+                <a href="#" id="menu">Our Services</a>
+                <a href="#" id="menu">Contacts</a>
+                <a href="#" id="menu">Newsletter</a>
+                <i id="iconProcura" onclick="aceito()" class="fa fa-search"><input id="procura" placeholder="Search"></i>
+            </span></center>
+        </div>
+
+        <script>
+            function aceito() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+    </body>
+</html>
