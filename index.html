@@ -4,33 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <!-- <link rel="icon" type="image/x-icon" href="icon.png"> -->    
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div id="main-menu">
-
             <img id="logo" src="logo2.png" width="80" height="50">
-            
-            <center><span id="bar">
-               
+          
+            <span id="bar">
+                
                 <a href="#" id="menu">Home</a>
                 <a href="#" id="menu">About Us</a>
                 <a href="#" id="menu">Our Services</a>
                 <a href="#" id="menu">Contacts</a>
                 <a href="#" id="menu">Newsletter</a>
-                <i id="iconProcura" onclick="aceito()" class="fa fa-search"><input id="procura" placeholder="Search"></i>
-            </span></center>
+                <i id="iconProcura" onclick="aceito()" class="fa fa-search"></i>
+            </span>
+            <input id="procura" placeholder="Search">
         </div>
+        <div id="net">
+            <div id="net-text">
+                <h2>Fadzai Nexus</h2>
+                <h3>We create joyful connections by</h3>
+                <h3>Crafting digital Excellence</h3>
+            </div>
+        </div>
+          
 
         <script>
+            let inputForm=document.getElementById("procura")
+            let searchButton=document.getElementById("iconProcura")
+            inputForm.style.display="none"
             function aceito() {
-              var x = document.getElementById("myDIV");
-              if (x.style.display === "none") {
-                x.style.display = "block";
+              //var x = document.getElementById("procura");
+              if (inputForm.style.display == "none") {
+                inputForm.style.display = "block";
+                searchButton.style.paddingLeft="20px";
               } else {
-                x.style.display = "none";
+                inputForm.style.display = "none";
               }
             }
             </script>
