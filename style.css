@@ -20,14 +20,15 @@ body{
 #menu{
     text-decoration-line: none;
     color: black;
-    padding-left: 20px;
+    margin-left: 20px;
     text-align: center; 
-    transition: 0.3s;
+   
+  transition:.35s ease-in-out;
 }
 #menu:hover{
-    background-color: indianred;
-    border-radius: 5px;
-    padding: 10px;
+    border-bottom:5px solid #b84040;
+    border-top:5px solid #b84040;
+    border-width: 100%;
     
 }
 
@@ -43,12 +44,12 @@ body{
     padding-left: 100px;
 }
 #procura{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     border:none;
     border-bottom:5px solid #b84040;
     margin-left: 80%;
     background-color: transparent;
-    text-align: left;
+    text-align: right;
     width: 100px;
     -webkit-transition: width .35s ease-in-out;
   transition: width .35s ease-in-out;
@@ -62,21 +63,32 @@ body{
     padding-top: 100px;
     background-image: url(Net.jpg);
     background-size: cover;
-   
+   margin-bottom: 50px;
     height: 250px;
 }
 #net-text{
     text-align: end;
     margin-right: 20px;
 }
-h2{
+#net-h2{
     color: white;
     text-transform: uppercase;
     text-shadow:2px 2px #b84040;  
     font-weight: bolder;
 }
-h3{
+#net-h3{
     color: white;
     text-transform: uppercase;
     text-shadow:2px 2px 4px #b84040;
+}
+
+#req1{
+    margin-left: 25px;
+   
+}
+#req1-p{
+    margin-left: 20px;
+    width: 250px;
+    font-size: medium;
+    text-align: justify;
 }
