@@ -84,10 +84,11 @@ body{
 }
 
 #req1{
-    margin-left: 25px;
-    float: left;
-   
+    overflow:hidden;
+    width:300px;
+    float:left;
 }
+
 #req1-p{
     margin-left: 20px;
     width: 250px;
@@ -96,24 +97,62 @@ body{
 }
 
 #req2{
-    margin-left: 350px;
+    margin-left: 30px;
     overflow: hidden;
     width: 300px;
-    display: block;
+    float: left;
 }
+
 #req2-p{
     width: 250px;
     font-size: medium;
     text-align: justify;
 }
 #req3{
-    margin-left: 350px;
-    overflow: hidden;
     width: 300px;
-    display: block;
+    float: left;
 }
 #req3-p{
     width: 250px;
     font-size: medium;
     text-align: justify;
+}
+#vid1{
+    margin-left: 30px;
+    float: left;
+}
+#req4{
+    margin-left: 30px;
+    overflow: hidden;
+    float: left;
+    
+}
+#req4-p{
+    width: 250px;
+    font-size: medium;
+    text-align: justify;
+}
+
+#parent{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#parent2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#web{
+    margin-left:55%;
+    line-height: 1.5;
+}
+#h3-web{
+    color: #2F1D6A;
+    font-weight:bolder;
+}
+
+#ticks-web{
+    color: rgb(98, 207, 98);
 }
