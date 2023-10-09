@@ -84,11 +84,24 @@ body{
 
 #req1{
     margin-left: 25px;
+    float: left;
    
 }
 #req1-p{
     margin-left: 20px;
     width: 250px;
+    font-size: medium;
+    text-align: justify;
+}
+
+#req2{
+    margin-left: 350px;
+    overflow: hidden;
+    width: 300px;
+    display: block;
+}
+#req2-p{
+   
     font-size: medium;
     text-align: justify;
 }
