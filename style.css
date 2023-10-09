@@ -6,7 +6,8 @@ body{
 
 #bar{
     background-color: hsla(187, 24%, 93%, 0.87);
-    border-radius: 20px;
+    /*border-radius: 20px;*/
+    border-bottom-left-radius: 20px;
     width: 50%;
    margin-bottom: 50px;
     text-transform: uppercase;
@@ -101,7 +102,18 @@ body{
     display: block;
 }
 #req2-p{
-   
+    width: 250px;
+    font-size: medium;
+    text-align: justify;
+}
+#req3{
+    margin-left: 350px;
+    overflow: hidden;
+    width: 300px;
+    display: block;
+}
+#req3-p{
+    width: 250px;
     font-size: medium;
     text-align: justify;
 }
