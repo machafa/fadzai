@@ -128,7 +128,7 @@ body{
     
 }
 #req4-p{
-    width: 250px;
+    width: 600px;
     font-size: medium;
     text-align: justify;
 }
@@ -143,16 +143,47 @@ body{
     margin-top: 25%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #c4e9e1;
+    height: 500px;
+    padding: 50px 0px 20px 0px;
 }
 #web{
-    margin-left:55%;
-    line-height: 1.5;
+    text-shadow: #c4e9e1;
+    margin-left:40%;
+    line-height: 2;
+    font-weight: 400;
+    background-image: url(websites.png);
+    background-position: 100px;
+    height: 500px;
 }
 #h3-web{
     color: #2F1D6A;
     font-weight:bolder;
+    padding-top:50px;
 }
 
 #ticks-web{
     color: rgb(98, 207, 98);
+}
+
+#parent3{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#h3-pa3{
+    color: #272d85;
+    font-size: 35px;
+}
+
+#click-pa3{
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #1d2372;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
 }
