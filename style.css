@@ -1,12 +1,15 @@
 
 body{
     font-family: Montserrat, sans-serif;
- 
+    width:auto;
+    /*grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));*/
 }
-
 #bar{
     background-color: hsla(187, 24%, 93%, 0.87);
-    /*border-radius: 20px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
     border-bottom-left-radius: 20px;
     width: 50%;
    margin-bottom: 50px;
@@ -60,11 +63,11 @@ body{
 }
 
 #net{
-    
+    grid-auto-flow: inherit;
     padding-top: 100px;
     background-image: url(Net.jpg);
     background-size: cover;
-   margin-bottom: 50px;
+    margin-bottom: 50px;
     height: 250px;
 }
 #net-text{
@@ -83,10 +86,27 @@ body{
     text-shadow:2px 2px 4px #b84040;
 }
 
+#parent{
+    margin-left: 15%;
+    margin-right: 15%;
+    /*display: table-cell;*/
+    display:grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    
+}
+
 #req1{
-    overflow:hidden;
     width:300px;
-    float:left;
+    background-color:white;
+    transition: transform .5s;
+}
+#req1:hover{
+    box-shadow: 2px 2px 4px #b84040;
+    -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  /*background-color: #c4e9e1;*/
+  transform: scale(1.1); 
 }
 
 #req1-p{
@@ -94,13 +114,14 @@ body{
     width: 250px;
     font-size: medium;
     text-align: justify;
+    padding: 10px 10px 10px 10px;
 }
 
 #req2{
     margin-left: 30px;
-    overflow: hidden;
+   
     width: 300px;
-    float: left;
+    
 }
 
 #req2-p{
@@ -110,7 +131,7 @@ body{
 }
 #req3{
     width: 300px;
-    float: left;
+    
 }
 #req3-p{
     width: 250px;
@@ -128,19 +149,15 @@ body{
     
 }
 #req4-p{
-    width: 600px;
+    width: 350px;
     font-size: medium;
     text-align: justify;
 }
 
-#parent{
-    margin-left: 25%;
-    margin-right: 25%;
-}
+
 #parent2{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 25%;
+    
+    margin-top:25px;
     margin-left: auto;
     margin-right: auto;
     background-color: #c4e9e1;
@@ -153,7 +170,7 @@ body{
     line-height: 2;
     font-weight: 400;
     background-image: url(websites.png);
-    background-position: 100px;
+    background-position:auto;
     height: 500px;
 }
 #h3-web{
@@ -174,11 +191,13 @@ body{
 #h3-pa3{
     color: #272d85;
     font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #click-pa3{
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #1d2372;
     color: white;
     padding: 20px 20px 20px 20px;
@@ -186,4 +205,22 @@ body{
     text-transform: uppercase;
     font-weight: bolder;
     border-radius: 5px;
+}
+
+#pay{
+    width: fit-content;
+    box-shadow:2px 2px 4px #b84040;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right:15px;
+    margin-left: 100px;
+}
+
+#pay-h2{
+    
+    color: rgb(50, 13, 92);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:2px 2px 10px #802424;  
+    font-weight: bolder;
 }
